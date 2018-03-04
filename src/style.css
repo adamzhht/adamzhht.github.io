@@ -1,6 +1,6 @@
 body {
-	font-family: 'Lato', serif;
 	font-size: 16px;
+	    font-family: "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
 .header{
 	position: fixed;
@@ -13,12 +13,44 @@ body {
 	align-items: center;
 	background: white;
 	z-index: 1;
+	background-color: #3b88c3;
+}
+
+.header-icon{
+	width: 60px;
+	height: 60px;
+	margin-left: 20px;
+	border: 1px solid white;
+	border-radius: 6px;
+}
+
+.header-icon img{
+	width: 100%;
+	height: 100%;
 }
 
 .content{
 	min-height: calc(100vh - 80px - 69px);
-	display: flex;
 	margin-top: 80px;
+}
+
+.content .content-inner{
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.aqi-desc{
+	padding-top: 20px;
+	display: flex;
+}
+
+.aqi-more{
+	margin-top: 80px;
+}
+
+.more-item-title{
+	font-weight: bold;
+	font-size: 24px;
 }
 
 .footer{
@@ -26,30 +58,31 @@ body {
 }
 
 .header-title{
-	margin-left: 50px;
+	margin-left: 10px;
 	font-size: 30px;
-	flex: 1;
 	
 
 }
 
-.admin-panel{
+.area-panel{
 	font-size: 20px;
-
 }
 
-.admin-panel .help-btn:hover{
-	outline: 1px dotted yellowgreen;
+.area-panel .area-list{
+	list-style-type: none;
+	margin-bottom: 0;
 }
 
-.admin-panel span,
-.admin-panel button{
-	margin-left: 20px;
-	margin-right: 20px;
-}
-
-.admin-panel span{
+.area-panel .area-list .area-list-item{
+	display: inline;
+	padding-left: 10px;
+	padding-right: 10px;
 	cursor: pointer;
+	color: #cbbde2;
+}
+
+.area-panel .area-list .area-list-item:hover{
+	color: white;
 }
 
 .footer{
@@ -102,84 +135,6 @@ body {
 	font-style: italic;
 	margin-left: 50px;
 
-}
-
-.help-container,
-.language-container,
-.admin-tools-container{
-	position:relative;
-	display: inline-block;
-}
-
-.help-btn-tooltips{
-	position: absolute;
-	background: yellow;
-	top: 30px;
-	display: none;
-	width:200px;
-	border-radius: 10px;
-}
-
-.admin-tools-list-container{
-	position: absolute;
-	background: yellowgreen;
-	display: none;
-	border-radius: 10px;
-	top:34px;
-	left: 20px;
-	
-}
-
-.admin-tools-list-container ul{
-	list-style-type:none;
-	cursor: pointer;
-	padding-left: 0px;
-}
-
-
-.admin-tools-list-container-item{
-	color: white;
-	padding: 5px 20px;
-
-}
-
-.admin-tools-list-container ul li:not(:last-child){
-	border-bottom: 1px solid white;
-}
-
-.language-list-container{
-	display: none;
-	position: absolute;
-	top: 35px;
-	left: 20px;
-	background-color: yellowgreen;
-	color: white;
-}
-
-.arrow-up {
-	position: absolute;
-	top: -10px;
-	left: 5px;
-	width: 0; 
-	height: 0; 
-	border-left: 15px solid transparent;
-	border-right: 15px solid transparent;
-	border-bottom: 15px solid yellowgreen;
-}
-
-.language-list-container ul{
-	list-style-type: none;
-	padding-left: 0;
-	margin-bottom: 0;
-}
-
-.language-list-container ul li{
-	padding: 5px 20px;
-	cursor: pointer;
-}
-
-.language-list-container ul li:not(:last-child){
-	border-bottom: 1px solid white;
 }
 
 .province-filter{

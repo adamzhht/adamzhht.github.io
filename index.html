@@ -12,7 +12,6 @@
 
 		<link rel="stylesheet" type="text/css" href="src/bootstrap-treeview.min.css">
 		<link rel="stylesheet" type="text/css" href="src/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
 
 		<script type="text/javascript" src="src/main.js"></script>
 		<script type="text/javascript" src="src/mock-data.js"></script>
@@ -20,45 +19,24 @@
 	</head>
 	<body>
 	 	<div class="header">
-	 		<span class="header-title">Air Condition Monitor System</span>
-	 		<div class="admin-panel">
-	 			<div class="help-container">
-	 				<span class="help-btn">Help</span>
-	 				<span class="help-btn-tooltips">aaaaaaaaaaaa</span>
-	 			</div>	
-	 			
-	 			<div class="language-container">
-	 				<span class="language-btn">Language</span>
-	 				<div class="language-list-container">
-	 					<div class="arrow-up"></div>
-	 					<ul>
-	 						<li class="language-list-item">Chinese</li>
-	 						<li class="language-list-item">English</li>
-	 						<li class="language-list-item">Japanese</li>
-	 						<li class="language-list-item">Korea</li>
-	 					</ul>
-	 				</div>
-	 			</div>
-	 			<div class="admin-tools-container">
-	 				<span class="admin-tools-btn">Admin Tools</span>
-	 				<div class="admin-tools-list-container">
-	 					<div class="arrow-up"></div>
-	 					<ul>
-	 						<li class="admin-tools-list-container-item">aaaaaaaaaaaaaaa</li>
-	 						<li class="admin-tools-list-container-item">bbbbbbbbbbbbbbb</li>
-	 						<li class="admin-tools-list-container-item">ccccccccccccccc</li>
-	 					</ul>
-	 				</div>
-	 			</div>
-	 				
-	 			
-	 			<button class="btn btn-danger">Log Off</button>
+	 		<div class="header-icon">
+	 			<img src="src/letter-a.svg"/>
 	 		</div>
 	 		
+	 		<span class="header-title">AQI in China</span>
+	 		<div class="area-panel">
+	 			<ul class="area-list">
+	 				<li class="area-list-item">Northeast</li>
+	 				<li class="area-list-item">Northwest</li>
+	 				<li class="area-list-item">Southeast</li>
+	 				<li class="area-list-item">Southwest</li>
+	 			</ul>
 	 		</div>
+	 		
+	 	</div>
 	 	
 		<div class="content">
-			<div class="col-xs-4 col-sm-4 col-md-2">
+			<!-- <div class="col-xs-4 col-sm-4 col-md-2">
 				<input type="text" name="" class="province-filter">
 				<div class="country-list-tree"></div>
 			</div>
@@ -72,12 +50,53 @@
 					</div>
 				</div>
 
+			</div> -->
+			<div class="content-inner">
+				<div class="aqi-desc">
+					<div class="aqi-icon">
+						<img src="src/aqi_icon.png">
+					</div>
+					<div class="aqi-content">
+						The AQI is an index for reporting daily air quality. It tells you how clean or polluted your air is, and what associated health effects might be a concern for you. The AQI focuses on health effects you may experience within a few hours or days after breathing polluted air. EPA calculates the AQI for five major air pollutants regulated by the Clean Air Act: ground-level ozone, particle pollution (also known as particulate matter), carbon monoxide, sulfur dioxide, and nitrogen dioxide. For each of these pollutants, EPA has established national air quality standards to protect public health .Ground-level ozone and airborne particles are the two pollutants that pose the greatest threat to human health in this country.
+					</div>
+				</div>
+			</div>
+			<div class="container aqi-more">
+				<div class="row">
+					<div class="more-item col-lg-4 col-md-4 col-sm-12 col-xs-12">
+						<div class="more-item-title">
+							How Does the AQI Work?
+						</div>
+						<p>
+							Think of the AQI as a yardstick that runs from 0 to 500. The higher the AQI value, the greater the level of air pollution and the greater the health concern. For example, an AQI value of 50 represents good air quality with little potential to affect public health, while an AQI value over 300 represents hazardous air quality.
+						</p>
+						<p>
+							An AQI value of 100 generally corresponds to the national air quality standard for the pollutant, which is the level EPA has set to protect public health. AQI values below 100 are generally thought of as satisfactory. When AQI values are above 100, air quality is considered to be unhealthy-at first for certain sensitive groups of people, then for everyone as AQI values get higher.
+						</p>
+					</div>
+					<div class="more-item col-lg-4 col-md-4 col-sm-12 col-xs-12">
+						<div class="more-item-title">
+							Understanding the AQI
+						</div>
+						<p>
+							An AQI value of 100 generally corresponds to the national air quality standard for the pollutant, which is the level EPA has set to protect public health. AQI values below 100 are generally thought of as satisfactory. When AQI values are above 100, air quality is considered to be unhealthy-at first for certain sensitive groups of people, then for everyone as AQI values get higher.
+						</p>
+					</div>
+					<div class="more-item col-lg-4 col-md-4 col-sm-12 col-xs-12">
+						<div class="more-item-title">
+							AQI colors
+						</div>
+						<p>
+							An AQI value of 100 generally corresponds to the national air quality standard for the pollutant, which is the level EPA has set to protect public health. AQI values below 100 are generally thought of as satisfactory. When AQI values are above 100, air quality is considered to be unhealthy-at first for certain sensitive groups of people, then for everyone as AQI values get higher.
+						</p>
+					</div>
+				</div>
 			</div>
 		</div> 
 		
 
 
-	<div class="footer">
+	<!-- <div class="footer">
 		<div class="footer-link">
 			<a>Terms of Use</a>
 			<a>About our Site</a>
@@ -90,7 +109,7 @@
 			Copyright @2017 my site. The author is not responsible for the content of external site.
 		</div>
 		
-	</div>
+	</div> -->
 
 	<script id="cityItem" type="text/x-dot-template">
 		{{~it :value:index}}
