@@ -1,6 +1,6 @@
 body {
-	font-size: 16px;
-	    font-family: "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+	font-size: 24px;
+	font-family: "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
 .header{
 	position: fixed;
@@ -50,7 +50,7 @@ body {
 
 .more-item-title{
 	font-weight: bold;
-	font-size: 24px;
+	font-size: 2.5rem;
 }
 
 .footer{
@@ -59,13 +59,13 @@ body {
 
 .header-title{
 	margin-left: 10px;
-	font-size: 30px;
+	font-size: 2.25rem;
 	
 
 }
 
 .area-panel{
-	font-size: 20px;
+	font-size: 2.125rem;
 }
 
 .area-panel .area-list{
