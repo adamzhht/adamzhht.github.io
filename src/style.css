@@ -141,3 +141,42 @@ body {
 	margin: 10px 0;
 }
 
+.table-word{
+	font-size:16px;
+	font-weight: normal;
+}
+
+.table-word-2{
+	font-size:16px;
+	font-weight: normal;
+	color: white;
+}
+
+.heading{
+	background: #E1EBF4;
+}
+
+.aqi-green{
+	background: #00E400;
+}
+
+.aqi-yellow{
+	background: #FFFF00;
+}
+
+.aqi-orange{
+	background: #FF7E00;
+}
+
+.aqi-red{
+	background: #FF0000;
+}
+
+.aqi-purple{
+	background: rgb(143, 63, 151);
+}
+
+.aqi-maroon{
+	background: #7E0023
+}
+
